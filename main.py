@@ -53,7 +53,7 @@ class PredictionResponse(BaseModel):
 def read_root():
     return {
         "name": "Titanic Survival Prediction API",
-        "version": "1.0.0",
+        "version": "2.0.0",
         "endpoints": {
             "/predict": "POST - Make survival prediction",
             "/health": "GET - Health check",
@@ -66,7 +66,7 @@ def read_root():
 def api_docs():
     return {
         "title": "Titanic Survival Prediction API Documentation",
-        "version": "1.0.0",
+        "version": "2.0.0",
         "description": "API for predicting passenger survival on the Titanic",
         "endpoints": [
             {
