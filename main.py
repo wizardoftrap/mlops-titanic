@@ -157,7 +157,7 @@ def health_check():
     }
 
 def main():
-    print("Starting Titanic Survival Prediction Server...")
+    print("Starting Titanic Survival Prediction API...")
     uvicorn.run(
         app,
         host="0.0.0.0",
