@@ -1,10 +1,8 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 import mlflow.sklearn
-import pickle
 import pandas as pd
 from sklearn.preprocessing import StandardScaler, LabelEncoder
-from typing import Optional
 import uvicorn
 import os
 
