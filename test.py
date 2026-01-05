@@ -52,8 +52,8 @@ def test(df):
     print(f"F1 Score: {f1:.4f}")
     
     #passing criteria
-    MIN_ACCURACY = 0.75
-    MIN_F1 = 0.70
+    MIN_ACCURACY = 0.80
+    MIN_F1 = 0.75
     
     test_passed = accuracy >= MIN_ACCURACY and f1 >= MIN_F1
     

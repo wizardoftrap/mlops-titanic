@@ -27,10 +27,10 @@ def train(df):
     with mlflow.start_run():
         #Train model
         model = RandomForestClassifier(
-            n_estimators=200,
-            max_depth=15,
-            min_samples_split=2,
-            min_samples_leaf=1,
+            n_estimators=300,
+            max_depth=10,
+            min_samples_split=8,
+            min_samples_leaf=4,
             class_weight='balanced',
             random_state=42,
             n_jobs=-1
@@ -51,10 +51,10 @@ def train(df):
         mlflow.log_metric("training_f1_score", f1)
         
         # Log parameters
-        mlflow.log_param("n_estimators", 200)
-        mlflow.log_param("max_depth", 15)
-        mlflow.log_param("min_samples_split", 2)
-        mlflow.log_param("min_samples_leaf", 1)
+        mlflow.log_param("n_estimators", 300)
+        mlflow.log_param("max_depth", 10)
+        mlflow.log_param("min_samples_split", 8)
+        mlflow.log_param("min_samples_leaf", 4)
         mlflow.log_param("class_weight", "balanced")
         
         # Save model
