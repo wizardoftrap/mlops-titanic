@@ -105,7 +105,7 @@ def api_docs():
                 "description": "Check API health status"
             }
         ],
-        "interactive_docs": "Visit /docs for interactive Swagger UI or /redoc for ReDoc"
+        "interactive_docs": "Visit /docs for interactive docs"
     }
 
 @app.post("/predict", response_model=PredictionResponse)
